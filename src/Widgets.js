@@ -12,24 +12,22 @@ function Widgets() {
     <div className="widgets">
       <div className="widgets__input">
         <SearchIcon className="widgets__searchIcon" />
-        <input placeholder="Search Twitter" type="text" />
+        <input placeholder="Search KietConnect" type="text" />
       </div>
 
       <div className="widgets__widgetContainer">
-        <h2>What's happening</h2>
-
-        <TwitterTweetEmbed tweetId={"858551177860055040"} />
-
+        <h2>coding updates</h2>
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="cleverqazi"
+          screenName="100DaysOfCode"
           options={{ height: 400 }}
         />
-
         <TwitterShareButton
-          url={"https://facebook.com/cleverprogrammer"}
-          options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
+          url={"https://kiet.edu"}
+          options={{ text: "#reactjs is awesome", via: "Code IT" }}
+
         />
+        <TwitterTweetEmbed tweetId={"1312922955773480960"} />
       </div>
     </div>
   );

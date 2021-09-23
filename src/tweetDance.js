@@ -6,7 +6,7 @@ import firebase from "firebase";
 import { useStateValue } from './StateProvider';
 
 
-function TweetBox() {
+function TweetDance() {
   const [{ user }, dispatch] = useStateValue();
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
@@ -14,7 +14,7 @@ function TweetBox() {
   const sendTweet = (e) => {
     e.preventDefault();
 
-    db.collection("posts").add({
+    db.collection("dance").add({
       displayName:user.displayName ,
       username: user.displayName,
       verified: true,
@@ -61,4 +61,4 @@ function TweetBox() {
   );
 }
 
-export default TweetBox;
+export default TweetDance;

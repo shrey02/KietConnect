@@ -1,0 +1,17 @@
+.ListProfile{
+    width:100vh;
+    height: 100vh;
+    border-top: 100vh;
+    align-items: center;
+}
+.List__head {
+
+    top: 0;
+    color:white;
+    background-color:#63152c;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    position: sticky;
+  }

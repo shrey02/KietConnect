@@ -6,13 +6,14 @@ import StoryReel from './StoryReel';
 import db from "./firebase";
 import FlipMove from "react-flip-move";
 import { useStateValue } from './StateProvider';
+import TweetDance from "./tweetDance";
 
-function Feed() {
+function FeedDance() {
   const [{ user }, dispatch] = useStateValue();
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").orderBy("timestamp","desc").onSnapshot((snapshot) =>
+    db.collection("dance").orderBy("timestamp","desc").onSnapshot((snapshot) =>
       setPosts(snapshot.docs.map((doc) => ({id: doc.id,
        post: doc.data()})))
     );
@@ -23,23 +24,22 @@ function Feed() {
        <StoryReel />
       <div className="feed__header">
 
-        <h2>CODE IT FEED</h2>
+        <h2>DANCE AND MUSIC CLUBS</h2>
       </div>
      
-      <TweetBox />
+      <TweetDance />
     
       <FlipMove>
         {posts.map(({id,post}) => (
           <Post
             key={post.timestamp}
-            postId={id}
             displayName={post.displayName}
             username={post.username}
             verified={post.verified}
             text={post.text}
             avatar={post.avatar}
             image={post.image}
-            
+            postId={id}
           />
         ))}
       </FlipMove>
@@ -47,4 +47,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default FeedDance;

@@ -1,0 +1,101 @@
+.login__bg{
+    
+    height: 100vh;
+    max-width: 1300px;
+    padding: 0 10px;
+	margin:auto;
+	font-size: 16px;
+	font-family: "lato",sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color:#666;
+}
+ .pimg1{
+    background-image: url(https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	min-height: 100vh;
+    position: relative;
+	opacity: 0.9;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*scroll in place of fixed */
+	background-attachment: fixed;
+}
+.pimg1 >.pimg2{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*scroll in place of fixed */
+	background-attachment: fixed;
+}
+.pimg1{
+	background-image: url(https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	min-height: 100vh;
+	
+}
+.pimg2{
+	background-image: url(https://i.pinimg.com/originals/69/f9/e9/69f9e9afdabacb960185c5aaea3af619.gif);
+	min-height: 400px;
+}
+.login__bg > .section{
+	text-align: center;
+	padding: 50px 80px;
+
+}
+.login__bg > .section > .section-light{
+	background-color: #f4f4f4;
+	color:#666;
+}
+
+.ptext{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	text-align: center;
+	color:#000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.pimg2 > .ptext2{
+	position: relative;
+	top:30vh;
+	width: 100%;
+	text-align: center;
+	color:#000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.ptext .border{
+	background-color: #111;
+	color:white;
+	padding: 20px;
+}
+.ptext2 .border{
+	background-color: rgb(31, 30, 30);
+	color:white;
+	padding: 20px;
+}
+
+.pimg1> .ptext >.border > Button:hover {
+    width: 300px;
+    background-color: gainsboro;
+	
+	color: white;
+	font:white;
+    font-weight: 800;
+}
+.pimg1> .ptext >.border > Button {
+    background-color: #63152c;
+    width: 300px;
+    color:  gainsboro;
+	font-weight: 800;
+}
+@media (max-width: 560px){
+	.pimg1,.pimg2{
+		background-attachment: scroll;
+	}
+}

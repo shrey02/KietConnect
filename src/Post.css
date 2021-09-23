@@ -11,9 +11,10 @@
 }
 
 .post__body > img {
-  border-radius: 20px;
+  border-radius: 30px;
+  max-width: 500px;
+  max-height: 400px;
 }
-
 .post__footer {
   display: flex;
   justify-content: space-between;
@@ -43,4 +44,30 @@
 
 .post__avatar {
   padding: 20px;
+}
+.post__comments {
+  padding: 10px;
+}
+.post__commentBox {
+  margin-top: 10px;
+  display: flex;
+}
+
+.post__input {
+  flex: 1;
+  border: none;
+  
+  outline-width: 0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 900px;
+  background-color: #eff2f5;
+}
+
+.post__button {
+  border: none;
+
+  color: #ca747f;
+  background-color: transparent;
+  flex: 0;
 }
